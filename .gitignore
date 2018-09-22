@@ -127,3 +127,7 @@ venv.bak/
 
 ##################
 output.txt
+
+
+files/* 
+

@@ -36,7 +36,7 @@ def imgadjust(image, in_interval, out_interval, gamma=1, imgrange=[0, 255]):
 """
 def imgcomplement(image, imgrange=[0, 255]):
     try:
-        return imggrange[1] - image
+        return imggrange[1] - image + imggrange[0]
     except IndexError:
         raise Exception('imgrange must be a minimun size of two (2)')
 
@@ -45,6 +45,7 @@ def imgcomplement(image, imgrange=[0, 255]):
 
 """
 def imglog(image, in_interval, out_interval):
-    pass
+    return out_interval * np.log10( 1 + 9 * image / in_interval)
+
 
 

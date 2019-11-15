@@ -47,5 +47,3 @@ def imgcomplement(image, imgrange=[0, 255]):
 def imglog(image, in_interval, out_interval):
     return out_interval * np.log10( 1 + 9 * image / in_interval)
 
-
-

@@ -133,3 +133,6 @@ files/*
 
 etc/*
 
+output*
+output_files*
+
